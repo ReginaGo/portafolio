@@ -1,3 +1,22 @@
 body {
     margin: 0;
 }
+
+.romania {
+    height: 200px;
+    width: 33.33%;
+    float: left;
+ 
+}
+
+.romania.red {
+    background-color: red;
+}
+
+.romania.yellow {
+    background-color: yellow;
+}
+
+.romania.blue {
+    background-color: blue;
+}

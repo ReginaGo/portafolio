@@ -1,3 +1,81 @@
-body {
-  margin: 0;
+p, h1, b, em, span, h3,h2, td, tr, li, label {
+    font-family: "DM Sans", sans-serif;
+  }
+img{
+    width: 100px;
+    border: solid ;
+}
+li{
+    text-decoration: underline;
+}
+
+.polinesios{
+    border: none;
+    width: 100px;
+    display: inline-block;
+
+}
+h2:hover{
+    color: rgb(231, 36, 36);
+    transition-delay:.3s;
+}
+
+.mex{
+    border: 1px;
+    border-radius: 90px;
+    padding: 5px;
+    width: 100px;
+}
+#japon{
+    border: 1px rgb(85, 16, 16);
+}
+table{
+    color: rgb(42, 42, 165);
+    border: 5px double;
+}
+
+#Top5 li{ /*"li" to be applied on the children of the id*/
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+
+}
+#Top3 li{
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+thead{
+    background-color: rgb(35, 17, 114);
+    color: beige;
+}
+
+tr:nth-child(even){/*"nth child" to be applied on the  N children of the element*/
+    background-color: rgb(72, 108, 96);
+}
+
+li:nth-child(4){
+    background-color: green;
+}
+.box{
+    display: inline;
+    justify-content: space-between;
+}
+.main{
+    border: 5px double pink;
+    width: 400px;
+  
+    display: inline-block;
+}
+.image{
+    display: inline;
+
+}
+.location{
+    display: inline-block;
+}
+.relative{
+    position: relative; /*the object moves but the original space of the onject remains*/
+    top: 20px;
+    left: 50px;
+    /*position: absolute;/*in the root the whole page*/
 }

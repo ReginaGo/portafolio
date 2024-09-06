@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(196, 206, 255); 
+   
+}
+h2{
+    margin-left: 5%;
+}
+p, h1, b, em, span, h3,h2, td, tr, li, label {
+    font-family: "DM Sans", sans-serif;
+  }
+  
+.box{
+    display: inline;
+}
+.card{
+    display: inline-block;
+}
+.cute-text{
+    font-family: "DM Sans", sans-serif;
+}
+.mleft{
+    margin-left: 5%
+}
+.hover-button {
+    text-decoration: none;
+    padding: 12px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #bd70e071;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+.center {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+   /*height: 100vh;*/
+          
+    /*background-color: #f0f0f0; */
+}
+.paragraph{
+    width: 50%;              
+    text-align: center;      
+    font-size: 18px;         
+    padding: 20px;           
+    box-sizing: border-box;  
+}
+
+.hover-title {
+    font-size: 36px;
+    color: #070707;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.hover-title::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #edf0f1;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.hover-title:hover {
+    color: #f3f4f4;
+}
+
+.hover-title:hover::after {
+    width: 90%;
+}
+
+.carta-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.carta {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33.333% - 20px); 
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+}
+
+.carta img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.carta p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+table{
+    color: rgb(42, 42, 165);
+    border: 5px double;
+}
+
+/* Estilos para la sección de registro de horario semanal */
+.weeklySchedule {
+    margin-left: 25%;
+    width: 50%;
+}
+
+.formTitle {
+    text-align: center;
+}
+
+.scheduleForm {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+.formLabel {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formInput,
+.formSelect,
+.formTextarea,
+.formColor {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.formSelect {
+    padding: 7px;
+}
+
+.formTextarea {
+    resize: vertical;
+}
+
+.formColor {
+    padding: 5px;
+}
+
+.formCheckbox {
+    margin-right: 5px;
+}
+
+.checkboxLabel {
+    margin-left: 5px;
+}
+
+.formSubmit {
+    text-align: center;
+}
+
+.submitButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
