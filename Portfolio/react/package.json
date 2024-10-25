@@ -1,0 +1,23 @@
+{
+  "name": "nodetesting",
+  "type":"module",
+  "version": "1.0.0",
+  "description": "hola polinesios esto es para ensenar el uso de npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "express",
+    "testing"
+  ],
+  "author": "Regina-a",
+  "license": "ISC",
+  "dependencies": {
+    "superhero": "^2.14.24",
+    "superheroes": "^4.0.0"
+  }
+}

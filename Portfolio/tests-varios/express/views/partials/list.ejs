@@ -1,0 +1,9 @@
+
+    <h2> <%= listTitle %></h2>
+    <ul>
+        <% genericList.forEach((item,index)=> { %>
+        <li><a href="/remove/<%=index %>"> <i class="fa-solid fa-trash"></i> </a><%= item.itemQty %> <%= item.itemName %> </li>
+        <% }); %>
+    </ul>    
+
+ 

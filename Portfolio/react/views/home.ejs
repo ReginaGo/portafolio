@@ -1,0 +1,57 @@
+
+    <%- include("partials/header");  -%>
+    <h1>BMI CALCULATOR cutie 2</h1>
+    <img src="./img/argentina.jpg" alt="" />
+
+<a href="/joke"><p>tell me a joke</p></a>
+<% if(locals.joke){ %>
+    <p><%=joke%></p>
+    <%} %>
+
+    <p>Hello <%= name %>
+    </p>
+
+    <form action="/" method="POST">
+        <input type="number" name="weight" placeholder="weight">
+        <input type="number" name="height" placeholder="height">
+        <button type="submit" name="submit">Calculate BMI</button>
+    </form>
+
+    <h1>Dictionary check</h1>
+    <form action="/check" method="POST">
+        <input type="text" name="word" placeholder="word to check">
+        <button type="submit" name="submit">Check</button>
+    </form>
+
+    <% if(locals.checked){ %>
+        <p><%= checked %></p>
+        <%} %>
+    
+    <form action="/add" method="POST">
+        <input type="text" name="item" placeholder="insert a new item">
+        <input type="number" name="qty" value="1">
+        <button type="submit" name="submit">ADD</button>
+    </form>
+    
+<% if(locals.shoppingList ){ 
+   //var listTitle = "Shopping List";
+    //var genericList = shoppingList; estos son comentarios
+    %>
+    <%- include("partials/list", {listTitle: "Shopping List", genericList: shoppingList});  -%>
+<% } %>
+
+                <!-- <  % is necessary to indicate wher is javascript, if theres no tag like that then it means its html  -->
+
+                <h2>Students</h2>
+                <!--  showing teh students in individual divs -->
+
+                <% students.forEach((student, index)=>{ %>
+                    <div>
+                        <h1> <%= index+1 %>. <%= student.name %> <%= student.lastname %> (ID: <%= student.id %>)</h1>
+                        <p><%= student.DOB %></p>
+                        <hr />
+                    </div>
+                   <% }); %>
+                   
+    </ul>
+    <%- include("partials/footer");  -%>

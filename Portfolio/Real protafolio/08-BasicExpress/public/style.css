@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://i.pinimg.com/564x/e5/99/1f/e5991f72d52b5a6e4bcd1abdb6ef948e.jpg');
+    background-size: cover; /* This will cover the entire body */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    height: 100vh; /* Full height */
+    margin: 0; /* Remove default margin */
+}
+.body2{
+    background-image: url('https://i.pinimg.com/originals/4d/56/75/4d567539ba144a1580ccc868b6cd084b.gif'); /* Especifica la ruta del GIF */
+    background-size: cover; /* Ajusta el fondo para cubrir toda la pantalla */
+    background-position: center; /* Centra el fondo */
+    background-repeat: no-repeat; /* Evita que el fondo se repita */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffb0c4; /* Pink background */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Lighten on hover */
+    border-radius: 5px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    background-color: #ff99cc; /* Button color */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #ff66b3; /* Darker pink on hover */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering the form items */
+    background: #fff; /* White background for the form */
+    padding: 20px; /* Space inside the form */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 300px; /* Width of the form */
+    margin: 0 auto; /* Centering the form in the page */
+}
+
+input[type="text"] {
+    width: 80%; /* Make inputs take most of the form width */
+    padding: 10px; /* Space inside input */
+    margin: 10px 0; /* Space between inputs */
+    border: 2px solid #ff69b4; /* Pink border */
+    border-radius: 10px; /* Rounded corners for inputs */
+    font-size: 1em; /* Font size for inputs */
+}
+
+input[type="text"]::placeholder {
+    color: #ff69b4; /* Pink placeholder text */
+    opacity: 0.7; /* Slightly transparent */
+}
+
+button {
+    background-color: #ff69b4; /* Button background */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Space inside the button */
+    border-radius: 10px; /* Rounded corners for button */
+    font-size: 1em; /* Font size for button */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #ff1493; /* Darker pink on hover */
+}
+
+h1 {
+    text-align: center;
+    color: #d81b60; /* Un color rosa para el título */
+}
+
+#result-container {
+     /* Altura del contenedor al 100% de la ventana */
+    display: flex; /* Usar flexbox para centrar */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+#result {
+    width: 40%; /* Ancho de la cajita */
+    font-size: 24px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Negrita para resaltar el resultado */
+    margin: 20px 0; /* Espaciado alrededor del resultado */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #fff; /* Fondo blanco para el resultado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centrar el texto dentro de la cajita */
+}
+a {
+    display: inline-block; /* Hace que el enlace se comporte como un bloque */
+    margin-top: 20px; /* Espaciado superior */
+    margin-left: 40px;
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #d81b60; /* Color de fondo rosa */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+a:hover {
+    background-color: #c2185b; /* Color de fondo al pasar el mouse */
+}

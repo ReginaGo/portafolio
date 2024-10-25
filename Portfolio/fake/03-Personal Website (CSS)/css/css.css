@@ -1,0 +1,56 @@
+.box1, .box2, .box3 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.box1 {
+    background-color: red;
+    border: 10px solid black;
+    padding: 20px;
+    top: 0;
+    left: 0;
+}
+
+.box2 {
+    background-color: blue;
+    border: 20px solid green;
+    top: 220px;
+    left: 220px;
+}
+
+.box3 {
+    background-color: yellow;
+    border: 10px solid purple;
+    top: 440px;
+    left: 440px;
+}
+
+
+
+/* Diagonal II */
+.diagonal2-yellow, .diagonal2-blue, .diagonal2-red {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.diagonal2-yellow {
+    background-color: yellow;
+    top: 660px;  /* Offset to avoid overlap with previous diagonal */
+    left: 0;
+}
+
+.diagonal2-blue {
+    background-color: blue;
+    top: 880px;
+    left: 220px;
+}
+
+.diagonal2-red {
+    background-color: red;
+    top: 1100px;
+    left: 440px;
+}
+
+/* Mondrian Effect */

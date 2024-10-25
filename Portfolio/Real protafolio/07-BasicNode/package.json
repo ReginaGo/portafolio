@@ -1,0 +1,21 @@
+{
+  "name": "07-basicnode",
+  "type":"module",
+  "version": "1.0.0",
+  "description": "Basic Node example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Regina Gómez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "star-wars-quotes": "^1.0.2",
+    "superheroes": "^4.0.0",
+    "supervillains": "^4.0.0"
+  }
+}

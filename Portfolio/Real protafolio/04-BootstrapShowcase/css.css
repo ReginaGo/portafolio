@@ -1,0 +1,15 @@
+#fila{
+    display: flex;
+    justify-content: center;
+ /* justify-content: space-between; O usa flex-start, flex-end, center, según necesites */
+ flex-wrap: wrap; 
+   }
+   .two{
+       width: 30%; /* Ajusta el tamaño según lo que necesites */
+        margin: 10px; 
+   }
+   .fixeado{
+       position: fixed;
+       /* width: 30%; */
+      
+   }
