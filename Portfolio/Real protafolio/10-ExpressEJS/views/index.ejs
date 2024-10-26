@@ -1,0 +1,22 @@
+
+<%- include("partials/header");  -%>
+<body>
+    <img class="logo" src="../images/StarLion.png" alt="lion brewery" />
+    <h1>Welcome to my landing page</h1>
+
+
+    <form action="/login" method="POST"> <!--aca le cambia a GET para que vea q si sirve pues -->
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+        <input type="submit" />
+    </form>
+<h2>check out the comunity blog</h2>
+<a href="/home">Blog</a>
+<% if (errorMessage) { %>
+    <p style="color: red;"><%= errorMessage %></p>
+<% } %>
+
+<br>
+<br>    
+<br>
+    <%- include("partials/footer");  -%>

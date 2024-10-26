@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather for <%= cityName %></title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Weather for <%= cityName %></h1>
+    <p>Temperature: <%= temp %>°C</p>
+    <p>Description: <%= description %></p>
+    <img src="<%= imageURL %>" alt="<%= description %>">
+    <br>
+    <a href="/">Back to home</a>
+</body>
+</html>

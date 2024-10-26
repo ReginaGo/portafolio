@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Express API</title>
+</head>
+<body>
+    <h1>Express API</h1>
+
+ 
+    <form action="/greet" method="GET">
+        <input type="text" name="name" placeholder="Introduce tu nombre">
+        <button type="submit">send</button>
+    </form>
+
+      <% if (names.length > 0) { %>
+        <h2>Saludos:</h2>
+        <ul>
+            <% names.forEach(name => { %>
+                <li><a href="/wazzup/<%= name %>"><%= name %></a></li>
+            <% }); %>
+        </ul>
+    <% } %>
+
+   
+    <% if (errorMessage) { %>
+        <p style="color: red;"><%= errorMessage %></p>
+    <% } %>
+
+
+    <h2>TODO List</h2>
+    <ul>
+        <% tasks.forEach((task, index) => { %>
+            <li>
+                <%= task %>
+                <form action="/task/delete" method="POST" style="display:inline;">
+                    <input type="hidden" name="taskIndex" value="<%= index %>">
+                    <button type="submit">Eliminar</button>
+                </form>
+            </li>
+        <% }); %>
+    </ul>
+
+   
+    <form action="/task" method="POST">
+        <input type="text" name="task" placeholder="Nueva tarea">
+        <button type="submit">Agregar</button>
+    </form>
+</body>
+</html>

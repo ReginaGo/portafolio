@@ -1,0 +1,21 @@
+{
+  "name": "11-express3rd-partyapi",
+  "version": "1.0.0",
+  "description": "Tu super API weather version los polinesios",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "polinesios"
+  ],
+  "author": "Regina Gomez",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "https": "^1.0.0"
+  }
+}
